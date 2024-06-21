@@ -1,0 +1,106 @@
+.create {
+    background-color: #141414;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    &__text{
+        color: white;
+        text-align: center;
+        h3 {
+            font-family: "Nunito";
+            font-weight: 700;
+        }
+        p {
+            font-family: "Inter";
+            font-weight: 400;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+        .gettgs{
+            width: 350px;
+            height: 5vh;
+            border-radius: 2vh;
+            background-color: #fff;
+            color: black;
+            font-family: "Nunito";
+            font-weight: 700;
+        }
+        .confirm {
+            width: 350px;
+            height: 5vh;
+            border-radius: 2vh;
+            background-color: #3D52D5;
+            color: white;
+            font-family: "Nunito";
+            font-weight: 700;
+        }
+        input {
+            width: 350px;
+            height: 5vh;
+            border-radius: 2vh;
+            background-color: transparent;
+            border: 2px #A3A3A3 solid;
+            padding-left: 2vh;
+            color: white;
+        }
+    }
+
+    span {
+        color: #8D8D8D;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 440px) {
+    .create {
+        &__text {
+            h3 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 0.8em;
+            }
+        }
+
+        &__buttons {
+            .gettgs{
+                width: 250px;
+                height: 5vh;
+                border-radius: 2vh;
+                background-color: #fff;
+                color: black;
+                font-family: "Nunito";
+                font-weight: 700;
+            }
+            .confirm {
+                width: 250px;
+                height: 5vh;
+                border-radius: 2vh;
+                background-color: #3D52D5;
+                color: white;
+                font-family: "Nunito";
+                font-weight: 700;
+            }
+            input {
+                width: 250px;
+                height: 5vh;
+                border-radius: 2vh;
+                background-color: transparent;
+                border: 2px #A3A3A3 solid;
+                padding-left: 2vh;
+                color: white;
+            }
+        }
+    }
+}

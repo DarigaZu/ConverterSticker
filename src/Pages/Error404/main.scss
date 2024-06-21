@@ -1,0 +1,42 @@
+.error {
+    background-color: #141414;
+    color: #fff;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    button{
+        width: 15rem;
+        height: 3rem;
+        border-radius: 2rem;
+        background-color: #3D52D5;
+        color: white;
+        font-family: "Nunito";
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 375px) {
+    .error {
+        h1 {
+            font-size: 3em;
+        }
+    
+        p {
+            font-size: 1em;
+        }
+    }
+}

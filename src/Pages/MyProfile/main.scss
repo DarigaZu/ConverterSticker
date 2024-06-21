@@ -1,0 +1,85 @@
+*{
+    font-family: "Nunito";
+}
+.profile{
+    background-color: #141414;
+    .container{
+        height: 100vh;
+    }
+    &_content{     
+        &_lblock{
+            width: 300px;
+            height: 302px;
+            background-color: #262626;
+            border-radius: 0px 0px 20px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+           margin-left: 10%;
+            span{
+                color: white;
+                font-weight: 600;
+                font-size: 26px;
+              margin-bottom: 5px;
+            }
+            button{
+                width: 197px;
+                height: 37px;
+                color: white;
+                background-color: #3D52D5;
+                border-radius: 20px;
+                font-weight: 700;
+                font-size: 12px;
+            }
+        }
+        &_rblock{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10%;
+        }
+    }
+}
+
+@media (min-width: 845px) {
+    .profile {
+        &_content {
+            display: flex;
+            gap: 10%;
+
+            &_lblock {
+                width: 300px;
+                height: 302px;
+                background-color: #262626;
+                border-radius: 0px 0px 20px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+               margin-left: 10%;
+                span{
+                    color: white;
+                    font-weight: 600;
+                    font-size: 26px;
+                  margin-bottom: 5px;
+                }
+                button{
+                    width: 197px;
+                    height: 37px;
+                    color: white;
+                    background-color: #3D52D5;
+                    border-radius: 20px;
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+            }
+            &_rblock{
+                margin-top: 10%;
+    
+            }
+            
+        }
+    }
+}

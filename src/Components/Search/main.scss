@@ -1,0 +1,42 @@
+.search {
+    background-color: #141414;
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    &__text {
+        color: white;
+        h3 {
+            font-family: "Nunito";
+            font-weight: 700;
+        }
+        p {
+            font-family: "Inter";
+            font-weight: 400;
+        }
+    }
+
+    .form-user-info {
+        width: 100%;
+        margin: 1em 0;
+        background-color: #fff;
+        border-radius: 5em;
+        font-size: 15px;
+        &-text {
+            // padding-top: 30px;
+            position: relative;
+            top: 1em;
+            flex-flow: row wrap;
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            column-gap: 40px;
+            font-family: "Nunito";
+        }
+    }
+} 

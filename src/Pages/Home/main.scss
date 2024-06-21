@@ -1,0 +1,47 @@
+.home-top {
+    .converter {
+        background-image: url('../../images/background.png');
+        background-size: cover;
+        height: 100vh;
+    }
+    
+    .content {
+        padding: 15% 0 15% 0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.home {
+    background-color: #262626;
+
+    .converter-sys {
+        .content {
+            padding: 10% 0 10% 0;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .converter-catalog {    
+        .content {
+            padding: 10% 0 10% 0;
+            color: #fff;
+            text-align: center;
+
+            .form-control {
+                width: 30% !important;
+                align-items: center;
+                background-color: #98B1DF;
+                position: relative;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+    }
+}

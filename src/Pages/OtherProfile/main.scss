@@ -1,0 +1,32 @@
+*{
+    font-family: "Nunito";
+}
+.otprofile{
+    background-color: #141414;
+    &_content{
+        height: 100vh;
+     
+        &_lblock{
+            width: 300px;
+            height: 302px;
+            background-color: #262626;
+            border-radius: 0px 0px 20px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+           margin-left: 10%;
+            span{
+                color: white;
+                font-weight: 600;
+                font-size: 26px;
+              margin-bottom: 5px;
+            }
+        }
+        &_rblock{
+            margin-top: 10%;
+        }
+        
+    }
+}

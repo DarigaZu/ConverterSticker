@@ -1,0 +1,136 @@
+@keyframes dropdown {
+	from {
+		opacity: 0;
+		transform: translateY(-25px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.header {
+	padding: 0.5% 0;
+	background-color: #262626;
+
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		column-gap: 13%;
+		display: flex;
+		flex-wrap: wrap;
+
+		&__profile {
+			display: flex;
+			gap: 14px;
+			align-items: center;
+			justify-content: center;
+			background-color: #393939;
+			width: 110px;
+			height: 45px;
+			border-radius: 25px;
+
+			.burger {
+				&:hover {
+					background-color: #ffffff;
+					transition: 0.5s;
+					border-radius: 25px;
+				}
+			}
+
+			.user {
+				&:hover {
+					background-color: #ffffff;
+					transition: 0.5s;
+					border-radius: 25px;
+				}
+			}
+
+			.menu {
+				width: 165px;
+				height: 106px;
+				animation: dropdown 0.3s ease-in-out;
+				background-color: #ffffff;
+				border-radius: 10px;
+				position: absolute;
+				top: 10%;
+				transform: translateY(10px);
+				z-index: 100;
+
+
+
+				p {
+					font-size: 14px;
+					font-family: "Nunito";
+					text-align: left;
+					margin-left: 10px;
+
+					&:hover {
+						transition: 0.5s;
+						text-decoration: underline;
+
+					}
+				}
+			}
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+}
+
+
+@media (max-width: 1600px) {
+	.header {
+		&__nav {
+			display: flex;
+			align-items: center;
+			column-gap: 7%;
+			font-size: 1.8em;
+
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media (max-width: 959px) {
+	.header {
+		&__nav {
+			display: flex;
+			align-items: center;
+			column-gap: 7%;
+			font-size: 2em;
+
+			a {
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media (max-width: 599px) {
+	.header {
+		padding: 3% 0;
+
+		&__nav {
+			flex-wrap: wrap;
+			display: flex;
+			align-items: center;
+			column-gap: 3%;
+			font-size: 1.5em;
+			.menu{
+				margin-top: 9.5%;
+			}
+
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+}
